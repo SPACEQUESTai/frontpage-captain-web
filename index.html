@@ -169,7 +169,7 @@ body.ground-dunkel .holo{filter:brightness(.72) saturate(1.12) contrast(1.08)}
 .preview{display:none;margin:46px 0 0}.preview.on{display:block}
 .sec-h{text-align:center;margin:0 0 8px}.sec-h h2{font-size:clamp(1.5rem,3.4vw,2.1rem);text-shadow:0 0 26px rgba(54,224,207,.25)}
 .sec-sub{text-align:center;color:var(--muted);margin:0 auto 26px;max-width:60ch}
-.styles{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.styles{display:grid;grid-template-columns:1fr;gap:40px;max-width:1180px;margin:0 auto}
 @media(max-width:760px){.styles{grid-template-columns:1fr}}
 /* PREIS-GRID (3 Stufen) */
 .pricegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1020px;margin:0 auto;align-items:stretch}
@@ -189,7 +189,7 @@ body.ground-dunkel .holo{filter:brightness(.72) saturate(1.12) contrast(1.08)}
 .browser{background:#0b0f28;padding-top:34px;position:relative}
 .browser::before{content:"";position:absolute;top:0;left:0;right:0;height:34px;border-bottom:1px solid rgba(255,255,255,.08);background-image:radial-gradient(circle 4px at 20px 17px,rgba(255,93,177,.9) 55%,transparent 56%),radial-gradient(circle 4px at 38px 17px,rgba(245,180,0,.9) 55%,transparent 56%),radial-gradient(circle 4px at 56px 17px,rgba(54,224,207,.9) 55%,transparent 56%);background-repeat:no-repeat}
 .browser::after{content:"deine-seite.de";position:absolute;top:9px;left:50%;transform:translateX(-50%);font-family:var(--f-d);font-size:.6rem;letter-spacing:.1em;color:#9fb2d6;background:rgba(255,255,255,.06);padding:3px 26px;border-radius:99px}
-.browser img{width:100%;height:230px;object-fit:cover;object-position:top;display:block}
+.browser img{width:100%;height:clamp(440px,64vh,760px);object-fit:cover;object-position:top;display:block}
 .sty .meta{padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .sty .meta b{font-family:var(--f-d);font-size:1.05rem}.sty .meta .st{color:var(--muted);font-size:.84rem}
 .sty .pick{font-family:var(--f-d);font-weight:800;font-size:.78rem;letter-spacing:.06em;color:#1a1330;background:var(--gold-hi);padding:.5rem .9rem;border-radius:99px;border:0;cursor:pointer}
@@ -1613,7 +1613,7 @@ function renderVariants(result){
   styURLs.B=bPath?(MOTOR_BASE+bPath):'';
   function frame(boxSel,src){
     var box=document.querySelector(boxSel);if(!box)return;
-    box.innerHTML=src?('<iframe src="'+src+'" loading="lazy" title="Vorschau" style="width:100%;height:230px;border:0;display:block"></iframe>'):box.innerHTML;
+    box.innerHTML=src?('<iframe src="'+src+'" loading="lazy" title="Vorschau" style="width:100%;height:clamp(440px,64vh,760px);border:0;display:block"></iframe>'):box.innerHTML;
   }
   frame('#styA .browser',styURLs.A);
   frame('#styB .browser',styURLs.B);
