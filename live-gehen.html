@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Live gehen — So bringst du deine Seite online | Frontpage Captain</title>
+<meta content="Du hast dein Cinematic Frontend als Datei-Paket. Diese Anleitung zeigt dir Schritt für Schritt, wie du es selbst online bringst: Hosting, eigene Domain, Kontaktformular — DSGVO-bewusst. Oder der Captain übernimmt das vor Ort." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/><link href="assets/a11y.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip" data-i18n="skip" href="#main">Zum Inhalt springen</a>
+<header id="hdr"><div class="wrap bar"><a class="brand" href="index.html"><img alt="Das Auge — Frontpage Captain" class="logoeye" src="assets/auge-icon.png"/><b>FRONTPAGE</b> <span>CAPTAIN</span></a><nav class="main"><a class="lnk" data-i18n="nav_warum-cinematic" href="warum-cinematic.html">Warum cinematic</a><a class="lnk" data-i18n="nav_so-laeufts" href="so-laeufts.html">So läuft's</a><a class="lnk" data-i18n="nav_preise" href="preise.html">Preise</a><a class="lnk" data-i18n="nav_vor-ort" href="vor-ort.html">Vor Ort</a><div aria-label="Sprache / Language" class="langsw" role="group"><button aria-label="Sprache: DE" data-lang="de" onclick="setLang('de')">DE</button><button aria-label="Sprache: EN" data-lang="en" onclick="setLang('en')">EN</button><button aria-label="Sprache: FR" data-lang="fr" onclick="setLang('fr')">FR</button><button aria-label="Sprache: NL" data-lang="nl" onclick="setLang('nl')">NL</button><button aria-label="Sprache: AR" data-lang="ar" onclick="setLang('ar')">AR</button></div><div aria-label="Barrierefreiheit" class="a11y" role="group"><button aria-label="Schrift kleiner" id="fsMinus">A-</button><button aria-label="Schrift größer" id="fsPlus">A+</button><button aria-label="Kontrast umschalten" id="contrast">◐</button></div><a class="cta" data-i18n="hdr_cta" href="index.html#start">Verwandlung starten</a></nav></div></header>
+<main id="main">
+<section class="subhero"><div class="glow"></div><div class="eyeorb"></div><div class="eyeglow" aria-hidden="true"></div><div class="wrap"><div class="crumbs"><a href="index.html">Start</a> › Live gehen</div><h1>Du hast dein Datei-Paket.<br/><span class="hl">So bringst du es online.</span></h1><p class="lede">Drei klare Wege — vom schnellsten in 5 Minuten bis zur eigenen Domain. Ehrlich, Schritt für Schritt, ohne Fachchinesisch. Und bei jedem Schritt gilt: keine Lust drauf? Der Captain übernimmt das vor Ort.</p></div></section>
+<section class="band">
+<div class="wrap">
+<div class="kick reveal">Weg 1 — Der schnellste Weg</div>
+<h2 class="reveal">Datei-Paket per Drag &amp; Drop online — in 5 Minuten</h2>
+<p class="reveal" style="color:var(--c-muted,#9fb2d6);margin:.8rem 0 1.6rem;max-width:62ch">Für dich, wenn du deine Seite sofort im Netz sehen willst, ohne irgendwas zu installieren.</p>
+<div class="flow">
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 1</span></div>
+<p>Geh auf <strong>app.netlify.com/drop</strong> (kostenloses Konto, Anmeldung per E-Mail reicht).</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 2</span></div>
+<p>Zieh deinen kompletten Webseiten-Ordner — den mit der <strong>index.html</strong> darin — mit der Maus auf das große Feld in der Mitte.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 3</span></div>
+<p>Warte ca. 30 Sekunden. Netlify lädt alles hoch und zeigt dir sofort eine Live-Adresse, z. B. <strong>dein-name-12345.netlify.app</strong>.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Fertig</span><span>⌛ ca. 5 Minuten</span><span>Kostenlos</span><span>Kein Vorwissen nötig</span></div>
+<p><strong>Deine Seite ist online.</strong> Diesen Link kannst du sofort teilen. Deinen eigenen Namen davorsetzen? Dann weiter mit Weg 2.</p>
+</div>
+</div>
+<div class="note reveal"><strong>Achtung:</strong> Lade den Ordner-<em>Inhalt</em> hoch, keine ZIP-Datei. Die <strong>index.html</strong> muss ganz oben liegen, nicht in einem Unterordner — sonst zeigt Netlify nur „Page not found“. Ein Kontaktformular läuft hier noch nicht von allein — dafür Weg 3.</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="kick reveal">Weg 2 — Dein eigener Name</div>
+<h2 class="reveal">Deine Domain verbinden — z. B. deine-firma.de</h2>
+<p class="reveal" style="color:var(--c-muted,#9fb2d6);margin:.8rem 0 1.6rem;max-width:62ch">Für dich, wenn die Seite schon online liegt und jetzt unter deinem eigenen Namen laufen soll statt unter „xyz.netlify.app“.</p>
+<div class="flow">
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 1</span></div>
+<p>Melde dich bei deinem <strong>Domain-Anbieter</strong> an — dort, wo du die Domain gekauft hast (IONOS, Strato, united-domains …).</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 2</span></div>
+<p>Geh bei Netlify in dein Projekt → <strong>Domain management → Add a domain</strong> und tipp deine Domain ein.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 3</span></div>
+<p>Wähl die einfachere von zwei Möglichkeiten:<br/><strong>A — Nameserver umstellen (am einfachsten):</strong> Netlify gibt dir vier Nameserver-Adressen. Die trägst du beim Domain-Anbieter unter „Nameserver“ ein. Ab dann verwaltet Netlify alles.<br/><strong>B — Einzelne Einträge:</strong> Du bleibst beim Anbieter und setzt von Hand einen <strong>A-Eintrag</strong> (Hauptdomain) und einen <strong>CNAME</strong> für „www“. Netlify zeigt dir die genauen Werte.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 4</span></div>
+<p>Speichern und <strong>warten</strong> — die Umstellung braucht ein paar Stunden, manchmal bis zu 24.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 5</span><span>⌛ ca. 15 Min + Wartezeit</span><span>Domain ca. 10–20 €/Jahr</span></div>
+<p>Netlify schaltet danach automatisch ein <strong>kostenloses SSL-Zertifikat</strong> frei (das Schloss / https). Nichts weiter zu tun.</p>
+</div>
+</div>
+<div class="note reveal"><strong>Häufigster Patzer:</strong> Wenn deine E-Mails @deine-firma.de beim alten Anbieter liegen und du auf „Nameserver“ (Variante A) umstellst, können die Mails kurz ausfallen — dann müssen die Mail-Einträge (MX) mitgenommen werden. Im Zweifel Variante B nehmen. Und: „Geht noch nicht“ heißt fast immer „DNS läuft noch“, nicht „kaputt“.</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="kick reveal">Weg 3 — Kontakt ermöglichen</div>
+<h2 class="reveal">Kontaktformular zum Laufen bringen — ohne eigenen Server</h2>
+<p class="reveal" style="color:var(--c-muted,#9fb2d6);margin:.8rem 0 1.6rem;max-width:62ch">Für dich, wenn Besucher dir über ein Formular schreiben sollen und die Nachricht einfach in deinem Postfach landen soll.</p>
+<div class="flow">
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 1</span></div>
+<p>Wähl einen <strong>Formular-Dienst</strong>: <strong>Web3Forms</strong> (250 Nachrichten/Monat gratis, am einfachsten) oder — für maximale DSGVO-Sicherheit — das <strong>Formular-Skript deines deutschen Hosters</strong> bzw. einen selbst gehosteten EU-Dienst.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 2</span></div>
+<p>Bei Web3Forms: Konto anlegen, du bekommst einen <strong>Access Key</strong> (eine lange Zeichenkette).</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 3</span></div>
+<p>In deiner <strong>kontakt.html</strong> trägst du diesen Key an der vorbereiteten Stelle ein — meist nur ein Platzhalter, den du tauschst.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 4</span></div>
+<p><strong>Spamschutz:</strong> Nutze einen unsichtbaren „Honeypot“ statt Google reCAPTCHA (das braucht seit 04/2026 einen Vertrag mit Google plus Cookie-Banner).</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 5</span></div>
+<p>Einmal selbst absenden und prüfen, ob die Mail ankommt.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Pflicht</span><span>⌛ ca. 15 Minuten</span><span>Gratis bis 250 Nachrichten/Monat</span><span>DSGVO beachten</span></div>
+<p>Unter das Formular gehört eine <strong>Einwilligungs-Checkbox</strong> plus ein Link zur Datenschutzerklärung (siehe Kasten unten).</p>
+</div>
+</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="kick reveal">DSGVO</div>
+<h2 class="reveal">Kurz zu DSGVO — damit du sauber startest</h2>
+<div class="prose reveal" style="margin-top:22px">
+<p><strong>Externe Formular-Dienste sind Auftragsverarbeitung.</strong> Mit Web3Forms, Formspree &amp; Co. schließt du einen AVV (Auftragsverarbeitungsvertrag) ab und nennst den Dienst in deiner Datenschutzerklärung.</p>
+<p><strong>US-Dienste brauchen eine Rechtsgrundlage.</strong> Web3Forms, Formspree &amp; Getform liegen in den USA — zulässig über das EU-US Data Privacy Framework, wenn der Anbieter gelistet ist. Sonst lieber eine EU-Lösung.</p>
+<p><strong>Am einfachsten DSGVO-sauber:</strong> gar keinen Dritt-Dienst nehmen — das Formular-Skript deines <strong>deutschen Hosters</strong> oder ein selbst gehosteter Dienst speichert auf deinem EU-Server.</p>
+<p><strong>Immer dabei:</strong> Datenschutz-Hinweis direkt am Formular, eine Einwilligungs-Checkbox, und nur abfragen, was du brauchst (Name, E-Mail, Nachricht).</p>
+<p><strong>Kein Google reCAPTCHA „einfach so“ mehr</strong> — besser unsichtbarer Honeypot oder Friendly Captcha / Cloudflare Turnstile.</p>
+</div>
+<div class="note reveal">Das sind Orientierungs-Hinweise, keine Rechtsberatung. Die fertigen Rechtstexte (Impressum / Datenschutz / AGB) im Paket sollten vor dem Livegang anwaltlich geprüft werden — oder der Captain bindet vor Ort die geprüfte EU-Variante ein.</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="kick reveal">Fortgeschritten</div>
+<h2 class="reveal">Auf deinen eigenen Webhoster per FTP — All-Inkl, IONOS, Hetzner</h2>
+<p class="reveal" style="color:var(--c-muted,#9fb2d6);margin:.8rem 0 1.6rem;max-width:62ch">Du hast schon Webspace bei einem deutschen Anbieter und willst die Seite genau dorthin legen — EU-Server, alles unter einem Dach.</p>
+<div class="flow">
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 1</span></div>
+<p>Lade das kostenlose Programm <strong>FileZilla</strong> herunter (für Mac &amp; Windows).</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 2</span></div>
+<p>Hol dir aus dem Kundenbereich deines Hosters die <strong>FTP-Zugangsdaten</strong> (Server, Benutzer, Passwort).</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 3</span></div>
+<p>Trag sie in FileZilla ein und verbinde dich — wähl die verschlüsselte Variante <strong>SFTP/FTPS</strong>.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 4</span></div>
+<p>Öffne rechts (dein Webspace) den Ordner <strong>public_html</strong> (oder httpdocs / www).</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Schritt 5</span></div>
+<p>Zieh links alle Dateien deiner Seite nach rechts in diesen Ordner.</p>
+</div>
+<div class="flowstep reveal">
+<div class="meta"><span>Fertig</span></div>
+<p>Ruf deine Domain im Browser auf — <strong>deine Seite ist live.</strong></p>
+</div>
+</div>
+<div class="note reveal"><strong>Achtung:</strong> Lege die Dateien <em>direkt</em> in public_html, nicht in einen Unterordner. Liegt schon eine alte Seite drin: erst sichern, dann ersetzen. Bei neuer Domain kann die DNS-Verbreitung bis zu 24 Stunden dauern.</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="kick reveal">Shop · CMS · Buchungssystem</div>
+<h2 class="reveal">Du hast schon ein bestehendes Backend?</h2>
+<div class="prose reveal" style="margin-top:22px">
+<p>Dann soll dein neues Frontend sauber davor — und genau das ist Maßarbeit. Eine Schnittstelle (API) richtig anzubinden, einen Warenkorb oder Login zu verkabeln, das macht kein Laie mal eben nebenbei.</p>
+<p>Drei Wege gibt es: <strong>API-Anbindung</strong>, <strong>Einbettung als Fenster</strong>, oder <strong>Weiterleitung auf eine Subdomain</strong> — welcher der richtige ist, hängt von deinem System ab.</p>
+<p>Das ist der Moment, in dem das <strong>Vor-Ort-Paket den größten Unterschied macht</strong>: bestehende Backends werden sauber mit dem neuen cinematic Frontend verbunden — du musst nichts anfassen.</p>
+</div>
+</div>
+</section>
+<section class="endcta"><div class="glow"></div><div class="wrap"><h2 class="reveal">Klappt was nicht? Kein Stress.</h2><p class="reveal">Du musst das nicht allein durchziehen. Sag Bescheid — das Vor-Ort-Paket bringt deine Seite live, bindet alles an und du lehnst dich zurück.</p><a class="pcta reveal" href="vor-ort.html">Vor-Ort-Paket ansehen ►</a><div><a class="backlink" href="index.html">← Zurück zur Startseite</a></div></div></section>
+</main>
+<footer><div class="wrap fgrid"><div data-i18n="foot_tag"><b style="color:#fff;font-family:Sora;letter-spacing:.12em">FRONTPAGE CAPTAIN</b><br/>Deine Website wird Kino.</div><div class="flinks"><a data-i18n="foot_impressum" href="impressum.html">Impressum</a><a data-i18n="foot_datenschutz" href="datenschutz.html">Datenschutz</a><a data-i18n="foot_agb" href="agb.html">AGB</a><a data-i18n="foot_kontakt" href="kontakt.html">Kontakt</a></div></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="assets/i18n.js"></script><button aria-expanded="false" aria-haspopup="dialog" aria-label="Barrierefreiheit" class="a11y-launch" id="a11yLaunch" onclick="a11yToggle()" type="button"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><circle cx="12" cy="3.6" r="2.1"></circle><path d="M20.5 8.2c-.1.5-.6.9-1.2.8L15 8.4v3.1l1.9 6.6c.2.7-.2 1.4-.9 1.6-.7.2-1.4-.2-1.6-.9L13 14h-2l-1.4 4.8c-.2.7-.9 1.1-1.6.9-.7-.2-1.1-.9-.9-1.6L9 11.5V8.4l-4.3.6c-.6.1-1.1-.3-1.2-.8-.1-.6.3-1.1.9-1.2L11 6.3h2l4.6.7c.6.1 1 .6.9 1.2z"></path></svg></button><div aria-label="Barrierefreiheit" aria-modal="false" class="a11y-panel" id="a11yPanel" role="dialog"><button aria-label="Schließen" class="a11y-x" onclick="a11yClose()" type="button">×</button><h3>Barrierefreiheit</h3><p class="a11y-sub">Stell die Seite so ein, wie es für dich am besten passt.</p><div class="a11y-grp"><span>Schrift</span><div class="a11y-row"><button aria-label="Schrift kleiner" class="a11y-btn" onclick="a11yFs(-0.1)" type="button">A−</button><button class="a11y-btn" onclick="a11yReset()" type="button">Reset</button><button aria-label="Schrift größer" class="a11y-btn" onclick="a11yFs(0.1)" type="button">A+</button></div></div><div class="a11y-grp"><span>Ansicht</span><div class="a11y-row"><button aria-pressed="false" class="a11y-btn" id="a11yHcBtn" onclick="a11yHc()" type="button">◑ Kontrast</button><button aria-pressed="false" class="a11y-btn" id="a11yMotionBtn" onclick="a11yMotion()" type="button">⏸ Ruhig</button></div></div><button class="a11y-speak" id="a11ySpeakBtn" onclick="a11ySpeak()" type="button"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="18"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 010 7M19 5a9 9 0 010 14"></path></svg><span class="lbl">Seite vorlesen</span></button></div><script src="assets/site.js"></script><script src="assets/a11y.js"></script>
+</body>
+</html>

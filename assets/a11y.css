@@ -1,0 +1,26 @@
+/* Barrierefreiheits-Panel — grünes Männchen unten links + Panel. Nutzt site.css-Variablen. */
+.a11y-launch{position:fixed;left:18px;bottom:18px;z-index:140;display:flex;align-items:center;justify-content:center;width:52px;height:52px;border:1px solid rgba(54,224,207,.55);border-radius:50%;background:rgba(10,37,64,.88);backdrop-filter:blur(10px) saturate(140%);box-shadow:0 12px 30px rgba(0,0,0,.45),0 0 22px rgba(54,224,207,.25);cursor:pointer;color:var(--teal);transition:transform .25s,box-shadow .25s,border-color .2s}
+.a11y-launch:hover{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 16px 38px rgba(0,0,0,.5),0 0 30px rgba(54,224,207,.4)}
+.a11y-launch svg{width:27px;height:27px;display:block}
+@media(max-width:520px){.a11y-launch{width:46px;height:46px}.a11y-launch svg{width:24px;height:24px}}
+
+.a11y-panel{position:fixed;left:18px;bottom:82px;z-index:141;width:min(330px,92vw);display:none;flex-direction:column;gap:14px;background:rgba(8,16,38,.97);border:1px solid var(--line2);border-radius:20px;padding:20px;box-shadow:0 28px 70px rgba(0,0,0,.6);backdrop-filter:blur(14px) saturate(150%)}
+.a11y-panel.on{display:flex}
+.a11y-panel h3{font-family:Sora,sans-serif;font-size:1.02rem;font-weight:700;color:var(--ink);margin:0}
+.a11y-panel .a11y-sub{font-size:.8rem;color:var(--muted);margin:-8px 0 0}
+.a11y-grp{display:flex;flex-direction:column;gap:7px}
+.a11y-grp>span{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:700}
+.a11y-row{display:flex;gap:8px}
+.a11y-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;font-family:Inter,sans-serif;font-weight:600;font-size:.9rem;color:var(--ink);background:var(--surface);border:1px solid var(--line2);border-radius:11px;padding:11px;cursor:pointer;transition:.18s}
+.a11y-btn:hover{border-color:var(--teal);color:#fff}
+.a11y-btn.on{background:rgba(54,224,207,.14);border-color:var(--teal);color:#fff}
+.a11y-speak{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;font-family:Sora,sans-serif;font-weight:700;font-size:.9rem;color:#04140f;background:var(--teal);border:0;border-radius:12px;padding:13px;cursor:pointer;transition:filter .18s}
+.a11y-speak:hover{filter:brightness(1.08)}
+.a11y-speak.speaking{background:var(--gold);color:#1a1205}
+.a11y-speak svg{flex:0 0 auto}
+.a11y-x{position:absolute;top:12px;right:14px;width:30px;height:30px;border-radius:50%;border:1px solid var(--line2);background:transparent;color:var(--muted);font-size:1.1rem;cursor:pointer;line-height:1}
+.a11y-x:hover{color:#fff;border-color:var(--teal)}
+/* Bewegung reduziert: Animationen/Videos ruhig */
+body.no-motion *{animation:none!important;transition:none!important}
+body.no-motion video{display:none}
+[dir=rtl] .a11y-launch,[dir=rtl] .a11y-panel{left:auto;right:18px}
