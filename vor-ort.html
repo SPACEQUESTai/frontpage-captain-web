@@ -1,30 +1,148 @@
 <!DOCTYPE html>
-
 <html lang="de">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Captain vor Ort — Frontpage Captain</title>
-<meta content="Ich komme, schalte deine cinematic Website live und binde dein Backend an. 1.976 € einmalig, alles inklusive." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="assets/site.css" rel="stylesheet"/><link href="assets/a11y.css" rel="stylesheet"/>
+<meta name="description" content="Ich komme, schalte deine cinematic Website live und binde dein Backend an. 1.976 € einmalig, alles inklusive."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="assets/fpc.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js')</script>
 <style>
-.price-hero{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.price-amt{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(2.2rem,5vw,3.4rem);background:linear-gradient(110deg,var(--gold),var(--gold-deep));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+.price-hero{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.price-amt{font-family:var(--fd);font-weight:800;font-size:clamp(2.2rem,5vw,3.4rem);background:linear-gradient(110deg,var(--gold),var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
 .price-tag{color:var(--muted);font-size:clamp(.92rem,1.4vw,1.08rem);font-weight:500}
-.contact-form input:focus,.contact-form textarea:focus{border-color:var(--teal)!important;outline:none;box-shadow:0 0 0 3px rgba(54,224,207,.15)}
-@media(max-width:600px){.contact-form{grid-template-columns:1fr!important}}
+.note{margin-top:30px;padding:18px 22px;border:1px solid var(--line);border-left:3px solid var(--cyan);border-radius:12px;background:var(--surf);color:#c3d0db;max-width:760px}
+.note strong{color:var(--paper)}
 </style>
 </head>
 <body>
-<a class="skip" data-i18n="skip" href="#main">Zum Inhalt springen</a>
-<header id="hdr"><div class="wrap bar"><a class="brand" href="index.html"><img alt="Das Auge — Frontpage Captain" class="logoeye" src="assets/auge-icon.png"/><b>FRONTPAGE</b> <span>CAPTAIN</span></a><nav class="main"><a class="lnk" data-i18n="nav_warum-cinematic" href="warum-cinematic.html">Warum cinematic</a><a class="lnk" data-i18n="nav_so-laeufts" href="so-laeufts.html">So läuft's</a><a class="lnk" data-i18n="nav_preise" href="preise.html">Preise</a><a class="lnk active" data-i18n="nav_vor-ort" href="vor-ort.html">Vor Ort</a><div aria-label="Sprache / Language" class="langsw" role="group"><button aria-label="Sprache: DE" data-lang="de" onclick="setLang('de')">DE</button><button aria-label="Sprache: EN" data-lang="en" onclick="setLang('en')">EN</button><button aria-label="Sprache: FR" data-lang="fr" onclick="setLang('fr')">FR</button><button aria-label="Sprache: NL" data-lang="nl" onclick="setLang('nl')">NL</button><button aria-label="Sprache: AR" data-lang="ar" onclick="setLang('ar')">AR</button></div><div aria-label="Barrierefreiheit" class="a11y" role="group"><button aria-label="Schrift kleiner" id="fsMinus">A−</button><button aria-label="Schrift größer" id="fsPlus">A+</button><button aria-label="Kontrast umschalten" id="contrast">◑</button></div><a class="cta" data-i18n="hdr_cta" href="index.html#start">Verwandlung starten</a></nav></div></header>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/auge-icon.png" alt="Frontpage Captain"/>FRONTPAGE&nbsp;<span>CAPTAIN</span></a>
+    <nav class="main">
+      <a class="lnk" href="warum-cinematic.html">Warum cinematic</a>
+      <a class="lnk" href="so-laeufts.html">So läuft's</a>
+      <a class="lnk" href="so-online.html">Online gehen</a>
+      <a class="lnk" href="preise.html">Preise</a>
+      <a class="lnk on" href="vor-ort.html">Vor Ort</a>
+      <a class="cta" href="vorschau.html">Verwandlung starten</a>
+    </nav>
+  </div>
+</header>
+
 <main id="main">
-<section class="subhero"><div class="glow"></div><div class="eyeorb"></div><div class="eyeglow" aria-hidden="true"></div><div class="wrap"><div class="crumbs" data-i18n="vor-ort_01"><a href="index.html">Start</a> › Captain vor Ort</div><h1 data-i18n="vor-ort_02">Ich komme. Ich schalte live. <span class="hl">Du lehnst dich zurück.</span></h1><p class="lede" data-i18n="vor-ort_03">Du musst nichts anfassen. Ich bringe deine fertige cinematic Website persönlich online, binde dein bestehendes Backend an und bleibe an deiner Seite, bis alles läuft.</p><div class="price-hero reveal" style="margin-top:28px"><span class="price-amt">1.976 €</span><span class="price-tag">einmalig · alles inklusive</span></div></div></section><section class="band"><div class="wrap"><div class="kick reveal" data-i18n="vor-ort_04">Das ist alles drin</div><h2 class="reveal" data-i18n="vor-ort_05">Alles aus dem Cinematic Frontend — plus der ganze Rest.</h2><div class="steps" style="margin-top:30px"><div class="step reveal"><div class="n">✦</div><h4 data-i18n="vor-ort_06">Deine komplette Website</h4><p data-i18n="vor-ort_07">Fertig gebaut aus deiner bestehenden Seite — Texte 1:1, dein Logo, deine Farben.</p></div><div class="step reveal"><div class="n">▲</div><h4 data-i18n="vor-ort_08">Live-Schaltung durch mich</h4><p data-i18n="vor-ort_09">Ich stelle deine Seite online — Hosting, Domain, SSL. Du klickst nichts.</p></div><div class="step reveal"><div class="n">⬢</div><h4 data-i18n="vor-ort_10">Anbindung an dein Backend</h4><p data-i18n="vor-ort_11">Shop, CMS, Buchungssystem oder Formular — ich verbinde dein Bestehendes sauber.</p></div><div class="step reveal"><div class="n">♥</div><h4 data-i18n="vor-ort_12">Persönliche Betreuung</h4><p data-i18n="vor-ort_13">Wir gehen alles zusammen durch. Korrekturen direkt mit dir, vor Ort.</p></div><div class="step reveal"><div class="n">◉</div><h4 data-i18n="vor-ort_14">Barrierefreiheit eingebaut</h4><p data-i18n="vor-ort_15">In jede Seite — ohne Aufpreis, von Anfang an.</p></div><div class="step reveal"><div class="n">✓</div><h4 data-i18n="vor-ort_16">Erst sehen, dann entscheiden</h4><p data-i18n="vor-ort_17">Du siehst deine fertige Seite, bevor wir den Termin festmachen.</p></div></div></div></section><section class="band" style="padding-top:0"><div class="wrap"><div class="kick reveal" data-i18n="vor-ort_18">So läuft deine Buchung</div><h2 class="reveal" data-i18n="vor-ort_19">Vier Schritte — sicher und ohne Überraschung.</h2><div class="flow"><div class="flowstep reveal"><h4 data-i18n="vor-ort_20">Termin wählen</h4><p data-i18n="vor-ort_21">Du suchst dir den nächsten freien Vor-Ort-Tag aus — live aus meinem Kalender.</p></div><div class="flowstep reveal"><h4 data-i18n="vor-ort_22">Sicher bezahlen</h4><p data-i18n="vor-ort_23">Die Zahlung läuft über Stripe. Der Termin wird verbindlich, sobald die Zahlung durch ist.</p></div><div class="flowstep reveal"><h4 data-i18n="vor-ort_24">Bestätigung</h4><p data-i18n="vor-ort_25">Du bekommst sofort eine Bestätigung mit Kalender-Eintrag. Ich auch — wir sind synchron.</p></div><div class="flowstep gold reveal"><h4 data-i18n="vor-ort_26">Ich komme</h4><p data-i18n="vor-ort_27">Am Tag X bin ich da, schalte deine Seite live, binde dein Backend an und gehe alles mit dir durch.</p></div></div><div class="note" data-i18n="vor-ort_28">Preis: <strong>1.976 €</strong> einmalig · alles inklusive. Erst nachdem du deine fertige Vorschau gesehen hast, machen wir den Termin verbindlich.</div></div></section><section class="band" id="buchung"><div class="wrap"><div class="kick reveal">Termin sichern</div><h2 class="reveal">Sichere dir deinen Vor-Ort-Tag.</h2><p class="lead reveal" style="margin-top:14px">Schreib mir kurz — ich melde mich mit dem nächsten freien Termin und der Vorschau deiner Seite.</p><form class="contact-form reveal" onsubmit="return false;" style="margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px"><div style="display:flex;flex-direction:column;gap:6px"><label for="cf-name" style="font-size:.82rem;color:var(--muted2);font-weight:600">Dein Name *</label><input autocomplete="name" id="cf-name" name="name" placeholder="Thomas Mustermann" required="" style="background:var(--surface);border:1px solid var(--line2);border-radius:10px;padding:.7rem .9rem;color:var(--ink);font:500 1rem Inter;width:100%" type="text"/></div><div style="display:flex;flex-direction:column;gap:6px"><label for="cf-firma" style="font-size:.82rem;color:var(--muted2);font-weight:600">Firma</label><input autocomplete="organization" id="cf-firma" name="firma" placeholder="Muster GmbH" style="background:var(--surface);border:1px solid var(--line2);border-radius:10px;padding:.7rem .9rem;color:var(--ink);font:500 1rem Inter;width:100%" type="text"/></div><div style="display:flex;flex-direction:column;gap:6px"><label for="cf-mail" style="font-size:.82rem;color:var(--muted2);font-weight:600">E-Mail *</label><input autocomplete="email" id="cf-mail" name="email" placeholder="du@firma.de" required="" style="background:var(--surface);border:1px solid var(--line2);border-radius:10px;padding:.7rem .9rem;color:var(--ink);font:500 1rem Inter;width:100%" type="email"/></div><div style="display:flex;flex-direction:column;gap:6px"><label for="cf-url" style="font-size:.82rem;color:var(--muted2);font-weight:600">Deine jetzige Website</label><input id="cf-url" name="url" placeholder="deine-firma.de" style="background:var(--surface);border:1px solid var(--line2);border-radius:10px;padding:.7rem .9rem;color:var(--ink);font:500 1rem Inter;width:100%" type="text"/></div><div style="display:flex;flex-direction:column;gap:6px;grid-column:1/-1"><label for="cf-msg" style="font-size:.82rem;color:var(--muted2);font-weight:600">Nachricht</label><textarea id="cf-msg" name="msg" placeholder="Kurz, worum es geht — Wunschtermin, bestehendes System, Fragen …" rows="4" style="background:var(--surface);border:1px solid var(--line2);border-radius:10px;padding:.7rem .9rem;color:var(--ink);font:500 1rem Inter;width:100%;resize:vertical;min-height:100px"></textarea></div><div style="grid-column:1/-1"><button class="cta" onclick="(function(){var n=document.getElementById('cf-name'),m=document.getElementById('cf-mail');if(!n.value.trim()||!m.value.trim()){alert('Bitte Name und E-Mail ausfüllen.');return;}var b='Anfrage: Captain vor Ort (1.976 EUR)\n\nName: '+n.value+'\nFirma: '+(document.getElementById('cf-firma').value||'')+'\nE-Mail: '+m.value+'\nWebsite: '+(document.getElementById('cf-url').value||'')+'\n\nNachricht:\n'+(document.getElementById('cf-msg').value||'');window.location.href='mailto:kontakt@frontpagecaptain.de?subject='+encodeURIComponent('Vor-Ort-Anfrage — '+n.value)+'&amp;body='+encodeURIComponent(b);})()" style="cursor:pointer;border:none;font-size:.95rem;padding:13px 26px" type="submit">Anfrage senden →</button></div></form><div class="note reveal" style="margin-top:16px;max-width:760px">Online-Direktbuchung mit Sofort-Termin &amp; sicherer Stripe-Zahlung folgt in Kürze. Bis dahin: Anfrage per E-Mail, ich melde mich mit dem nächsten freien Tag.</div></div></section><section class="endcta"><div class="glow"></div><div class="wrap"><h2 class="reveal" data-i18n="vor-ort_29">Lehn dich zurück — ich mach das.</h2><p class="reveal" data-i18n="vor-ort_30">Sichere dir deinen Vor-Ort-Termin. Sobald deine Vorschau steht, bringe ich deine Seite persönlich online.</p><a class="pcta gold reveal" data-i18n="vor-ort_31" href="https://buy.stripe.com/14A00j3ksgPpeQk6A487K05">Vor-Ort-Termin sichern →</a><div><a class="backlink" href="index.html">← Zurück zur Startseite</a></div></div></section>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Captain vor Ort</span>
+      <h1>Ich komme. Ich schalte live. <span class="accent">Du lehnst dich zurück.</span></h1>
+      <p class="lede">Du musst nichts anfassen. Ich bringe deine fertige cinematic Website persönlich online, binde dein bestehendes Backend an und bleibe an deiner Seite, bis alles läuft.</p>
+      <div class="price-hero reveal">
+        <span class="price-amt">1.976 €</span>
+        <span class="price-tag">einmalig · alles inklusive</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="kick reveal">Das ist alles drin</div>
+      <h2 class="reveal">Alles aus dem Cinematic Frontend — plus der ganze Rest.</h2>
+      <div class="grid c3">
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H4z"/><path d="M2 20h20"/></svg></div>
+          <h3>Deine komplette Website</h3>
+          <p>Fertig gebaut aus deiner bestehenden Seite — Texte 1:1, dein Logo, deine Farben.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+          <h3>Live-Schaltung durch mich</h3>
+          <p>Ich stelle deine Seite online — Hosting, Domain, SSL. Du klickst nichts.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4.6v9.2L12 22l-8-4.6V6.6z"/></svg></div>
+          <h3>Anbindung an dein Backend</h3>
+          <p>Shop, CMS, Buchungssystem oder Formular — ich verbinde dein Bestehendes sauber.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+          <h3>Persönliche Betreuung</h3>
+          <p>Wir gehen alles zusammen durch. Korrekturen direkt mit dir, vor Ort.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Barrierefreiheit eingebaut</h3>
+          <p>In jede Seite — ohne Aufpreis, von Anfang an.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 6"/></svg></div>
+          <h3>Erst sehen, dann entscheiden</h3>
+          <p>Du siehst deine fertige Seite, bevor wir den Termin festmachen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap">
+      <div class="kick reveal">So läuft deine Buchung</div>
+      <h2 class="reveal">Vier Schritte — sicher und ohne Überraschung.</h2>
+      <div class="grid c4">
+        <div class="card reveal">
+          <div class="n">01</div>
+          <h4>Termin wählen</h4>
+          <p>Du suchst dir den nächsten freien Vor-Ort-Tag aus — live aus meinem Kalender.</p>
+        </div>
+        <div class="card reveal">
+          <div class="n">02</div>
+          <h4>Sicher bezahlen</h4>
+          <p>Die Zahlung läuft über Stripe. Der Termin wird verbindlich, sobald die Zahlung durch ist.</p>
+        </div>
+        <div class="card reveal">
+          <div class="n">03</div>
+          <h4>Bestätigung</h4>
+          <p>Du bekommst sofort eine Bestätigung mit Kalender-Eintrag. Ich auch — wir sind synchron.</p>
+        </div>
+        <div class="card reveal">
+          <div class="n">04</div>
+          <h4>Ich komme</h4>
+          <p>Am Tag X bin ich da, schalte deine Seite live, binde dein Backend an und gehe alles mit dir durch.</p>
+        </div>
+      </div>
+      <div class="note reveal">Preis: <strong>1.976 €</strong> einmalig · alles inklusive. Erst nachdem du deine fertige Vorschau gesehen hast, machen wir den Termin verbindlich.</div>
+    </div>
+  </section>
+
+  <section class="band center">
+    <div class="wrap">
+      <div class="kick reveal">Termin sichern</div>
+      <h2 class="reveal">Lehn dich zurück — ich mach das.</h2>
+      <p class="lead reveal">Sichere dir deinen Vor-Ort-Termin. Sobald deine Vorschau steht, bringe ich deine Seite persönlich online.</p>
+      <p class="reveal" style="margin-top:32px">
+        <a class="btn gold" href="https://buy.stripe.com/14A00j3ksgPpeQk6A487K05">Vor-Ort-Termin sichern →</a>
+      </p>
+      <div class="note reveal" style="margin-left:auto;margin-right:auto;text-align:left">Online-Direktbuchung mit Sofort-Termin &amp; sicherer Stripe-Zahlung folgt in Kürze. Bis dahin: Anfrage per E-Mail an <a href="mailto:ai@frontpagecaptain.com" style="color:var(--cyan)">ai@frontpagecaptain.com</a> — ich melde mich mit dem nächsten freien Tag.</div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap fgrid"><div data-i18n="foot_tag"><b style="color:#fff;font-family:Sora;letter-spacing:.12em">FRONTPAGE CAPTAIN</b><br/>Deine Website wird Kino.</div><div class="flinks"><a data-i18n="foot_impressum" href="impressum.html">Impressum</a><a data-i18n="foot_datenschutz" href="datenschutz.html">Datenschutz</a><a data-i18n="foot_agb" href="agb.html">AGB</a><a data-i18n="foot_kontakt" href="kontakt.html">Kontakt</a></div></div></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="assets/i18n.js"></script><button aria-expanded="false" aria-haspopup="dialog" aria-label="Barrierefreiheit" class="a11y-launch" id="a11yLaunch" onclick="a11yToggle()" type="button"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><circle cx="12" cy="3.6" r="2.1"></circle><path d="M20.5 8.2c-.1.5-.6.9-1.2.8L15 8.4v3.1l1.9 6.6c.2.7-.2 1.4-.9 1.6-.7.2-1.4-.2-1.6-.9L13 14h-2l-1.4 4.8c-.2.7-.9 1.1-1.6.9-.7-.2-1.1-.9-.9-1.6L9 11.5V8.4l-4.3.6c-.6.1-1.1-.3-1.2-.8-.1-.6.3-1.1.9-1.2L11 6.3h2l4.6.7c.6.1 1 .6.9 1.2z"></path></svg></button><div aria-label="Barrierefreiheit" aria-modal="false" class="a11y-panel" id="a11yPanel" role="dialog"><button aria-label="Schließen" class="a11y-x" onclick="a11yClose()" type="button">×</button><h3>Barrierefreiheit</h3><p class="a11y-sub">Stell die Seite so ein, wie es für dich am besten passt.</p><div class="a11y-grp"><span>Schrift</span><div class="a11y-row"><button aria-label="Schrift kleiner" class="a11y-btn" onclick="a11yFs(-0.1)" type="button">A−</button><button class="a11y-btn" onclick="a11yReset()" type="button">Reset</button><button aria-label="Schrift größer" class="a11y-btn" onclick="a11yFs(0.1)" type="button">A+</button></div></div><div class="a11y-grp"><span>Ansicht</span><div class="a11y-row"><button aria-pressed="false" class="a11y-btn" id="a11yHcBtn" onclick="a11yHc()" type="button">◑ Kontrast</button><button aria-pressed="false" class="a11y-btn" id="a11yMotionBtn" onclick="a11yMotion()" type="button">⏸ Ruhig</button></div></div><button class="a11y-speak" id="a11ySpeakBtn" onclick="a11ySpeak()" type="button"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="18"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 010 7M19 5a9 9 0 010 14"></path></svg><span class="lbl">Seite vorlesen</span></button></div><script src="assets/site.js"></script><script src="assets/a11y.js"></script>
+
+<footer>
+  <div class="wrap fgrid">
+    <div class="ft"><b>FRONTPAGE CAPTAIN</b><br/><span>Deine Website wird Kino.</span></div>
+    <div class="flinks">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/motion.min.js"></script>
+<script src="assets/motion-fx.js"></script>
 </body>
 </html>
