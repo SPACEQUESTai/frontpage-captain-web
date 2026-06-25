@@ -1503,7 +1503,7 @@ function theaterTick(progress){
   }
 }
 function pollStatus(id){
-  var start=Date.now(),TIMEOUT=130000;
+  var start=Date.now(),TIMEOUT=300000; /* 5 Min — Motor darf bis 400s bauen; Frontend nicht vorher aufgeben (Multi-Page-Seiten brauchen länger) */
   (function loop(){
     if(jobId!==id)return;                         /* neuer Job hat übernommen */
     if(Date.now()-start>TIMEOUT){theaterStop(_theaterFx);showBuildError('timeout');return;}
