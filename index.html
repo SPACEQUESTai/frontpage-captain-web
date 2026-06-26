@@ -275,6 +275,21 @@ html[dir="rtl"] .hero .eyebrow::before{order:0}
         <h2 class="reveal" data-i18n="c_h2">Einer liest. Einer baut. <span class="accent">Einer liefert.</span></h2>
         <p class="lead reveal" data-i18n="c_lead">Hinter jeder Verwandlung steht kein Baukasten und kein Template-Karussell, sondern eine Maschine, die deine Seite bis in die letzte Ecke scannt, sie premium neu baut und hinstellt, als hätte ein ganzes Studio Wochen daran gearbeitet. In einer Stunde statt in Wochen.</p>
       </div>
+      <style>
+      .captain-figure{position:relative;display:flex;justify-content:center;margin:6px auto 42px;perspective:1150px;width:100%;max-width:320px}
+      .captain-figure .cf-glow{position:absolute;top:1%;left:50%;width:150px;height:150px;margin-left:-75px;border-radius:50%;background:radial-gradient(circle,rgba(63,224,208,.55),rgba(63,224,208,0) 68%);filter:blur(13px);animation:cfPulse 3.3s ease-in-out infinite;pointer-events:none;z-index:0}
+      .captain-figure img{position:relative;z-index:1;width:80%;max-width:250px;height:auto;display:block;filter:drop-shadow(0 28px 55px rgba(0,0,0,.6));transform:rotateX(0) rotateY(0);transition:transform .3s cubic-bezier(.22,1,.36,1);will-change:transform}
+      @keyframes cfPulse{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:.85;transform:scale(1.14)}}
+      @media(prefers-reduced-motion:reduce){.captain-figure img{transition:none}.captain-figure .cf-glow{animation:none}}
+      </style>
+      <div class="captain-figure reveal" aria-hidden="true"><div class="cf-glow"></div><img id="captainBot" src="assets/captain-robot.png" alt="Captain — dein Roboter"/></div>
+      <script>
+      (function(){var bot=document.getElementById('captainBot');if(!bot)return;
+        try{if(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches)return;}catch(e){}
+        var raf=0,rx=0,ry=0;function apply(){raf=0;bot.style.transform='rotateX('+rx.toFixed(2)+'deg) rotateY('+ry.toFixed(2)+'deg)';}
+        window.addEventListener('pointermove',function(e){var px=e.clientX/window.innerWidth-0.5,py=e.clientY/window.innerHeight-0.5;ry=px*18;rx=-py*11;if(!raf)raf=requestAnimationFrame(apply);},{passive:true});
+      })();
+      </script>
       <div class="deeds3">
         <div class="deed3 reveal"><span class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span><h4 data-i18n="c_d1h">Liest alles</h4><p data-i18n="c_d1p">Jeden Text, jedes Logo, jede Farbe, jede Unterseite — inklusive Impressum, Datenschutz und AGB.</p></div>
         <div class="deed3 reveal"><span class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1L12 16.6 5.7 21l2.3-7.1-6-4.5h7.6z"/></svg></span><h4 data-i18n="c_d2h">Baut Gold</h4><p data-i18n="c_d2p">Dein Inhalt 1:1, dein Design auf Premium-Niveau. Cinematic, barrierefrei, schnell.</p></div>

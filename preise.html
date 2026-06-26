@@ -1,131 +1,124 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Preise — Frontpage Captain</title>
-<meta name="description" content="Ein Produkt, zwei Wege: Cinematic Frontend 777 € oder Captain vor Ort 1.976 €. Kein Abo, ehrlich bepreist."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<meta content="Ein Produkt, zwei Wege: Cinematic Frontend 777 € oder Captain vor Ort 1.976 €. Kein Abo, ehrlich bepreist." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&amp;family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="assets/fpc.css" rel="stylesheet"/>
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<a class="skip" href="#main">Zum Inhalt springen</a>
-
+<a class="skip" data-i18n="skip" href="#main">Zum Inhalt springen</a>
 <header>
-  <div class="wrap bar">
-    <a class="brand" href="index.html"><img src="assets/auge-icon.png" alt="Frontpage Captain"/>FRONTPAGE&nbsp;<span>CAPTAIN</span></a>
-    <nav class="main">
-      <a class="lnk" href="warum-cinematic.html">Warum cinematic</a>
-      <a class="lnk" href="so-laeufts.html">So läuft's</a>
-      <a class="lnk" href="so-online.html">Online gehen</a>
-      <a class="lnk on" href="preise.html">Preise</a>
-      <a class="cta" href="vorschau.html">Verwandlung starten</a>
-    </nav>
-  </div>
+<div class="wrap bar">
+<a class="brand" href="index.html"><img alt="Frontpage Captain" src="assets/auge-icon.png"/>FRONTPAGE <span>CAPTAIN</span></a>
+<nav class="main">
+<a class="lnk" data-i18n="nav_warum-cinematic" href="warum-cinematic.html">Warum cinematic</a>
+<a class="lnk" data-i18n="nav_so-laeufts" href="so-laeufts.html">So läuft's</a>
+<a class="lnk" data-i18n="nav_online" href="so-online.html">Online gehen</a>
+<a class="lnk on" data-i18n="nav_preise" href="preise.html">Preise</a>
+<div aria-label="Sprache / Language" class="langsw" role="group"><button aria-label="Deutsch" data-lang="de" onclick="setLang('de')">DE</button><button aria-label="English" data-lang="en" onclick="setLang('en')">EN</button><button aria-label="Français" data-lang="fr" onclick="setLang('fr')">FR</button><button aria-label="Nederlands" data-lang="nl" onclick="setLang('nl')">NL</button><button aria-label="العربية" data-lang="ar" onclick="setLang('ar')">AR</button></div><a class="cta" data-i18n="hdr_cta" href="vorschau.html">Verwandlung starten</a>
+</nav>
+</div>
 </header>
-
 <main id="main">
-  <section class="page-hero">
-    <div class="wrap">
-      <span class="eyebrow">Preise</span>
-      <h1>Ein Produkt. Zwei Wege. <span class="accent">Ehrlich bepreist.</span></h1>
-      <p class="lede">Kein Abo. Keine versteckten Kosten. Du zahlst erst, wenn deine Seite steht — und dann gehört sie dir.</p>
-      <div class="ticks" style="justify-content:center">
-        <span class="tick"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Kein Abo</span>
-        <span class="tick"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Erst sehen, dann zahlen</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div class="grid c2">
-
-        <div class="card reveal">
-          <div class="kick">Cinematic Frontend</div>
-          <div class="n">777 €</div>
-          <p style="margin-bottom:18px">einmalig · komplette Website als Datei-Paket</p>
-          <div class="ticks" style="flex-direction:column;gap:12px;margin-top:0">
-            <span class="tick"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Deine ganze Seite, cinematic neu inszeniert</span>
-            <span class="tick"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Alle Unterseiten, Texte 1:1, dein Logo, deine Farben</span>
-            <span class="tick"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Download &amp; selbst hochladen — ich zeig dir wie</span>
-            <span class="tick"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Barrierefreiheits-Funktionen in jeder Seite</span>
-            <span class="tick"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Erst sehen, dann zahlen</span>
-          </div>
-          <a class="btn" href="vorschau.html" style="margin-top:26px">Verwandlung starten</a>
-        </div>
-
-        <div class="card reveal" style="border-color:rgba(255,200,97,.45)">
-          <div class="kick" style="color:var(--gold)">Captain vor Ort</div>
-          <div class="n" style="background:linear-gradient(135deg,var(--gold),var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent">1.976 €</div>
-          <p style="margin-bottom:18px">einmalig · alles aus Cinematic + Live-Schaltung</p>
-          <div class="ticks" style="flex-direction:column;gap:12px;margin-top:0">
-            <span class="tick"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Alles aus dem Cinematic Frontend</span>
-            <span class="tick"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Live-Schaltung durch mich — Hosting, Domain, SSL</span>
-            <span class="tick"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Anbindung an dein Backend: Shop, CMS, Formular</span>
-            <span class="tick"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Persönliche Vor-Ort-Betreuung, Korrekturen direkt</span>
-            <span class="tick"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Du musst nichts anfassen</span>
-          </div>
-          <a class="btn gold" href="vor-ort.html" style="margin-top:26px">Vor-Ort-Termin ansehen</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="band alt">
-    <div class="wrap">
-      <div class="kick reveal">Häufige Fragen</div>
-      <h2 class="reveal">Klar und ohne Kleingedrucktes.</h2>
-      <div class="legal reveal" style="margin-top:34px;margin-left:0">
-        <details>
-          <summary>Was heißt „erst sehen, dann zahlen"?</summary>
-          <div class="ans"><p>Genau das: Ich baue deine cinematic Seite und zeige sie dir fertig. Erst wenn sie dir gefällt, zahlst du. Gefällt sie dir nicht, kostet dich das nichts.</p></div>
-        </details>
-        <details>
-          <summary>Gibt es ein Abo oder laufende Kosten?</summary>
-          <div class="ans"><p>Nein. Beide Pakete sind eine einmalige Zahlung. Beim Cinematic Frontend lädst du die Seite bei einem Anbieter deiner Wahl hoch — viele davon sind kostenlos.</p></div>
-        </details>
-        <details>
-          <summary>Gehört mir die Seite dann wirklich?</summary>
-          <div class="ans"><p>Ja. Du bekommst das komplette Datei-Paket. Es ist deine Seite, mit deinen Inhalten — du kannst damit machen, was du willst.</p></div>
-        </details>
-        <details>
-          <summary>Was, wenn ich nicht selbst hochladen will?</summary>
-          <div class="ans"><p>Dann ist „Captain vor Ort" für dich da: Ich komme, schalte alles live und binde dein bestehendes System an. Du klickst nichts.</p></div>
-        </details>
-        <details>
-          <summary>Ist Barrierefreiheit extra?</summary>
-          <div class="ans"><p>Nein. Schriftgröße, Kontrast und eine saubere, vorlesbare Struktur sind in jede Seite eingebaut — ohne Aufpreis, von Anfang an.</p></div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="band center">
-    <div class="wrap">
-      <h2 class="reveal">Welcher Weg ist deiner?</h2>
-      <p class="lead reveal">Selbst hochladen oder dich zurücklehnen — beides startet mit derselben kostenlosen Vorschau.</p>
-      <div class="reveal" style="margin-top:30px"><a class="btn" href="vorschau.html">Kostenlose Vorschau starten</a></div>
-    </div>
-  </section>
+<section class="page-hero">
+<div class="wrap">
+<span class="eyebrow" data-i18n="nav_preise">Preise</span>
+<h1 data-i18n="preise_02">Ein Produkt. Zwei Wege. <span class="accent">Ehrlich bepreist.</span></h1>
+<p class="lede" data-i18n="preise_03">Kein Abo. Keine versteckten Kosten. Du zahlst erst, wenn deine Seite steht — und dann gehört sie dir.</p>
+<div class="ticks" style="justify-content:center">
+<span class="tick" data-i18n="sh_kein_abo"><span class="ck"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Kein Abo</span>
+<span class="tick" data-i18n="preise_10"><span class="ck"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Erst sehen, dann zahlen</span>
+</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="grid c2">
+<div class="card reveal">
+<div class="kick" data-i18n="preise_04">Cinematic Frontend</div>
+<div class="n">777 €</div>
+<p data-i18n="preise_05" style="margin-bottom:18px">einmalig · komplette Website als Datei-Paket</p>
+<div class="ticks" style="flex-direction:column;gap:12px;margin-top:0">
+<span class="tick" data-i18n="preise_06"><span class="ck"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Deine ganze Seite, cinematic neu inszeniert</span>
+<span class="tick" data-i18n="preise_07"><span class="ck"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Alle Unterseiten, Texte 1:1, dein Logo, deine Farben</span>
+<span class="tick" data-i18n="preise_08"><span class="ck"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Download &amp; selbst hochladen — ich zeig dir wie</span>
+<span class="tick" data-i18n="preise_09"><span class="ck"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Barrierefreiheits-Funktionen in jeder Seite</span>
+<span class="tick" data-i18n="preise_10"><span class="ck"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Erst sehen, dann zahlen</span>
+</div>
+<a class="btn" data-i18n="preise_11" href="vorschau.html" style="margin-top:26px">Verwandlung starten</a>
+</div>
+<div class="card reveal" style="border-color:rgba(255,200,97,.45)">
+<div class="kick" data-i18n="preise_12" style="color:var(--gold)">Captain vor Ort</div>
+<div class="n" style="background:linear-gradient(135deg,var(--gold),var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent">1.976 €</div>
+<p data-i18n="preise_13" style="margin-bottom:18px">einmalig · alles aus Cinematic + Live-Schaltung</p>
+<div class="ticks" style="flex-direction:column;gap:12px;margin-top:0">
+<span class="tick" data-i18n="preise_14"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Alles aus dem Cinematic Frontend</span>
+<span class="tick" data-i18n="preise_15"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Live-Schaltung durch mich — Hosting, Domain, SSL</span>
+<span class="tick" data-i18n="preise_16"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Anbindung an dein Backend: Shop, CMS, Formular</span>
+<span class="tick" data-i18n="preise_17"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Persönliche Vor-Ort-Betreuung, Korrekturen direkt</span>
+<span class="tick" data-i18n="preise_18"><span class="ck" style="background:rgba(255,200,97,.16);color:var(--gold)"><svg fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M5 12l5 5L20 6"></path></svg></span>Du musst nichts anfassen</span>
+</div>
+<a class="btn gold" data-i18n="preise_19" href="vor-ort.html" style="margin-top:26px">Vor-Ort-Termin ansehen</a>
+</div>
+</div>
+</div>
+</section>
+<section class="band alt">
+<div class="wrap">
+<div class="kick reveal" data-i18n="preise_20">Häufige Fragen</div>
+<h2 class="reveal" data-i18n="preise_21">Klar und ohne Kleingedrucktes.</h2>
+<div class="legal reveal" style="margin-top:34px;margin-left:0">
+<details>
+<summary data-i18n="preise_22">Was heißt „erst sehen, dann zahlen"?</summary>
+<div class="ans"><p data-i18n="preise_23">Genau das: Ich baue deine cinematic Seite und zeige sie dir fertig. Erst wenn sie dir gefällt, zahlst du. Gefällt sie dir nicht, kostet dich das nichts.</p></div>
+</details>
+<details>
+<summary data-i18n="preise_24">Gibt es ein Abo oder laufende Kosten?</summary>
+<div class="ans"><p data-i18n="preise_25">Nein. Beide Pakete sind eine einmalige Zahlung. Beim Cinematic Frontend lädst du die Seite bei einem Anbieter deiner Wahl hoch — viele davon sind kostenlos.</p></div>
+</details>
+<details>
+<summary data-i18n="preise_26">Gehört mir die Seite dann wirklich?</summary>
+<div class="ans"><p data-i18n="preise_27">Ja. Du bekommst das komplette Datei-Paket. Es ist deine Seite, mit deinen Inhalten — du kannst damit machen, was du willst.</p></div>
+</details>
+<details>
+<summary data-i18n="preise_28">Was, wenn ich nicht selbst hochladen will?</summary>
+<div class="ans"><p data-i18n="preise_29">Dann ist „Captain vor Ort" für dich da: Ich komme, schalte alles live und binde dein bestehendes System an. Du klickst nichts.</p></div>
+</details>
+<details>
+<summary data-i18n="preise_30">Ist Barrierefreiheit extra?</summary>
+<div class="ans"><p data-i18n="preise_31">Nein. Schriftgröße, Kontrast und eine saubere, vorlesbare Struktur sind in jede Seite eingebaut — ohne Aufpreis, von Anfang an.</p></div>
+</details>
+</div>
+</div>
+</section>
+<section class="band center">
+<div class="wrap">
+<h2 class="reveal" data-i18n="preise_32">Welcher Weg ist deiner?</h2>
+<p class="lead reveal" data-i18n="preise_33">Selbst hochladen oder dich zurücklehnen — beides startet mit derselben kostenlosen Vorschau.</p>
+<div class="reveal" style="margin-top:30px"><a class="btn" data-i18n="preise_34" href="vorschau.html">Kostenlose Vorschau starten</a></div>
+</div>
+</section>
 </main>
-
 <footer>
-  <div class="wrap fgrid">
-    <div class="ft"><b>FRONTPAGE CAPTAIN</b><br/><span>Deine Website wird Kino.</span></div>
-    <div class="flinks">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-      <a href="agb.html">AGB</a>
-      <a href="kontakt.html">Kontakt</a>
-    </div>
-  </div>
+<div class="wrap fgrid">
+<div class="ft"><b>FRONTPAGE CAPTAIN</b><br/><span data-i18n="foot_slogan">Deine Website wird Kino.</span></div>
+<div class="flinks">
+<a data-i18n="foot_impressum" href="impressum.html">Impressum</a>
+<a data-i18n="foot_datenschutz" href="datenschutz.html">Datenschutz</a>
+<a data-i18n="foot_agb" href="agb.html">AGB</a>
+<a data-i18n="foot_kontakt" href="kontakt.html">Kontakt</a>
+</div>
+</div>
 </footer>
-
+<script src="assets/i18n.js"></script>
+<script src="assets/i18n-apply.js"></script>
 <script src="assets/motion.min.js"></script>
 <script src="assets/motion-fx.js"></script>
 </body>

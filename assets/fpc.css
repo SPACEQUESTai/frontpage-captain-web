@@ -18,8 +18,8 @@ body{background:var(--ink);color:var(--paper);font-family:var(--fb);font-size:17
 .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 28px}
 h1,h2,h3,h4,h5{font-family:var(--fd);font-weight:700;line-height:1.06;letter-spacing:-.02em}
 a{color:inherit;text-decoration:none}
-.skip{position:absolute;left:-999px;top:0;background:var(--cyan);color:#04121a;padding:10px 16px;border-radius:10px;z-index:200}
-.skip:focus{left:14px;top:14px}
+.skip{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+.skip:focus{position:fixed;width:auto;height:auto;clip:auto;clip-path:none;inset-inline-start:14px;top:14px;padding:10px 16px;background:var(--cyan);color:#04121a;border-radius:10px;z-index:200}
 
 /* ---------- Header ---------- */
 header{position:sticky;top:0;z-index:90;backdrop-filter:blur(14px);
@@ -141,3 +141,4 @@ html[dir="rtl"] .prose,html[dir="rtl"] .legal{text-align:right}
   *{animation:none!important;transition:none!important}
   .reveal,.js .reveal{opacity:1;transform:none}
 }
+.ck.gold{background:rgba(255,200,97,.16);color:var(--gold)}
