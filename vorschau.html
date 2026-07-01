@@ -538,6 +538,11 @@ header nav.nav a{color:var(--muted);transition:color .2s}header nav.nav a:hover{
 .bigmon-bar i:nth-child(1){background:#ff5db1}.bigmon-bar i:nth-child(2){background:#ffd27f}.bigmon-bar i:nth-child(3){background:#3fe0d0}
 .bigmon-url{margin-left:16px;font-size:.84rem;color:var(--muted);font-family:Inter}
 .bigmon .browser{padding-top:0;background:#04060f}
+/* FIX 01.07.: der große Ergebnis-Mockup hat schon seinen Chrome (.bigmon-bar). Der innere .browser
+   rendert sonst über ::before/::after einen ZWEITEN Chrome (Ampelpunkte + "deine-seite.de"-Pille),
+   der bei padding-top:0 über die erste iframe-Zeile (a11y-Leiste) rutscht. Nur hier abschalten —
+   die kleinen Karussell-Karten (.pubslide .browser) behalten ihren Chrome. */
+.bigmon .browser::before,.bigmon .browser::after{display:none}
 .bigmon .prev-ph{aspect-ratio:16/9;min-height:540px}
 .bigmon-foot{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:24px;flex-wrap:wrap}
 .bigmon-foot b{font-size:1.12rem}
